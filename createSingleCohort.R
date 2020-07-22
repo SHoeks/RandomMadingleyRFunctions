@@ -2,6 +2,8 @@ createSingleCohort = function(cohortAdultMass_kg, gc_index, functional_group, is
 
 
   # example:
+  # library(MadingleyR)
+  # sp_inputs = madingley_inputs("spatial inputs")
   # createSingleCohort(cohortAdultMass_kg=200,gc_index=0,functional_group=0,isAdult=1,sp_inputs=sp_inputs)
   
   if(cohort_def==0) cohort_def = MadingleyR::madingley_inputs('cohort definition')
