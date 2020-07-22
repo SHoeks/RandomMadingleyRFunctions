@@ -51,12 +51,18 @@ createSingleCohort = function(cohortAdultMass_kg, gc_index, functional_group, is
     TrophicIndex = TrophicIndex,
     IndividualReproductivePotentialMass = 0,
     MaturityTimeStep = 0,
-    IsAdult = 0
+    IsAdult = 0,
+    AgeMonths = 0,                      
+    TimeStepsJuviline = 0,            
+    TimeStepsAdult = 0,   
   )
   
   if(isAdult==1) {
     out$IndividualBodyMass = cohortAdultMass
     out$IsAdult = 1
+    out$TimeStepsAdult = 1
+    out$AgeMonths = 1
+    out$TimeStepsJuviline = 1
   }
   
   return(out)
