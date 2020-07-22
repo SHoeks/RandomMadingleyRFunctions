@@ -54,7 +54,7 @@ createSingleCohort = function(cohortAdultMass_kg, gc_index, functional_group, is
     IsAdult = 0,
     AgeMonths = 0,                      
     TimeStepsJuviline = 0,            
-    TimeStepsAdult = 0,   
+    TimeStepsAdult = 0  
   )
   
   if(isAdult==1) {
