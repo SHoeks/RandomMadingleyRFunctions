@@ -47,10 +47,10 @@ createSingleCohort = function(cohortAdultMass_kg, gc_index, functional_group, is
     CohortAbundance = NewBiomass,
     LogOptimalPreyBodySizeRatio = log(optimalPreyBodySizeRatio),
     BirthTimeStep = 0,
-    IndividualReproductivePotentialMass = 0,
-    MaturityTimeStep = 0,
     ProportionTimeActive = 0.5,
     TrophicIndex = TrophicIndex,
+    IndividualReproductivePotentialMass = 0,
+    MaturityTimeStep = 0,
     IsAdult = 0
   )
   
