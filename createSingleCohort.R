@@ -56,7 +56,7 @@ createSingleCohort = function(cohortAdultMass_kg, gc_index, functional_group, is
   
   if(isAdult==1) {
     out$IndividualBodyMass = cohortAdultMass
-    out$isAdult = 1
+    out$IsAdult = 1
   }
   
   return(out)
