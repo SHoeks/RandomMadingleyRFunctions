@@ -55,7 +55,12 @@ plotBinnedTimelines = function(m_data2,plot=TRUE,only_above_zero=FALSE){
       output_data[[fg_data]] = data_fg
     }
   }
+  
+  par(mfrow=c(1,1))
+  
   if(!plot){
     return(output_data)
   }
+  
+
 }
