@@ -4,7 +4,7 @@ plotBinnedTimelines =
     
     cdef = madingley_data$cohort_def
     
-    if(class(mdata2$out_path)=="NULL"){
+    if(class(madingley_data$out_path)=="NULL"){
       dir_path = paste0(tempdir(),madingley_data$out_dir_name,"/cohort_properties/") # make dir name
     }else{
       dir_path = paste0(madingley_data$out_path,madingley_data$out_dir_name,"/cohort_properties/") # make dir name
