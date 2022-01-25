@@ -82,5 +82,5 @@ make_spatial_biomass_raster_autotrophs = function(md){
     r_empty_stack[[mnth]][] = apply(m_r_empty, 2, rev) # flip matrix vertically
   }
   
-  return(brick(r_empty_stack))
+  return(brick(r_empty_stack)/1000) # return in kg
 }
