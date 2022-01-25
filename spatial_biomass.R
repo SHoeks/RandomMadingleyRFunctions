@@ -36,13 +36,13 @@ m_data2 = madingley_run(years = 5,
 # load and create spatial biomass raster autotrophs 
 # this loads and rasterizes the autotroph data for the last 12 months of the simulation
 autotr_biomass = make_spatial_biomass_raster_autotrophs(m_data2)
-plot(log10(autotr_biomass), zlim=c(9,11)) # make plot from rasters
+plot(log10(autotr_biomass), zlim=c(9,11)) # make plot from rasters, in kg
 
 # check if values are correct (compare rasters against stock (autotroph) time line)
 plot_timelines(m_data2) # plot the time line
 test = c(); for(i in 1:12) test = c(test,sum(autotr_biomass[[i]][])) # sum the value of all rasters
 months = sort(sort(m_data2$time_line_stocks$Month, decreasing = TRUE)[1:12]) + 1 # get months
-lines(months,log10(test/1000), col="red", lwd = 3) # add time line extracted from rasters
+lines(months,log10(test), col="red", lwd = 3) # add time line extracted from rasters
 
 
 
