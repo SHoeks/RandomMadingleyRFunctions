@@ -36,7 +36,7 @@ m_data2 = madingley_run(years = 5,
 # load and create spatial biomass raster autotrophs 
 # this loads and rasterizes the autotroph data for the last 12 months of the simulation
 autotr_biomass = make_spatial_biomass_raster_autotrophs(m_data2)
-plot(log10(autotr_biomass), zlim=c(12,14)) # make plot from rasters
+plot(log10(autotr_biomass), zlim=c(9,11)) # make plot from rasters
 
 # check if values are correct (compare rasters against stock (autotroph) time line)
 plot_timelines(m_data2) # plot the time line
