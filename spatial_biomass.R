@@ -42,7 +42,7 @@ plot(log10(autotr_biomass), zlim=c(12,14)) # make plot from rasters
 plot_timelines(m_data2) # plot the time line
 test = c(); for(i in 1:12) test = c(test,sum(autotr_biomass[[i]][])) # sum the value of all rasters
 months = sort(sort(m_data2$time_line_stocks$Month, decreasing = TRUE)[1:12]) + 1 # get months
-lines(months,log10(test), col="red", lwd = 3) # add time line extracted from rasters
+lines(months,log10(test/1000), col="red", lwd = 3) # add time line extracted from rasters
 
 
 
