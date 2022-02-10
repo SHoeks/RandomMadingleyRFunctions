@@ -61,9 +61,7 @@ plot_combined_timelines = function(mdatas, legend=TRUE, plot=TRUE, legend_ypos=N
       }else if(!is.null(legend_ypos & !is.null(legend_xpos)){
         legend(legend_xpos, legend_ypos, legend=names_leg,col=c("darkgreen",colors[1:c]), lty=c(1,1:c), cex=0.8)
       }
-      
-    }
- 
+    
   }else{
     return(tl_comb)
   }
