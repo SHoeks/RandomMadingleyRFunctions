@@ -27,7 +27,7 @@ get_rewildEU_FD_data = function(wd,scenario,location,replica){
   files = files[order(files, decreasing = TRUE)][1:12]
   data_init = do.call(rbind,lapply(files,read.csv))
   dim(data_init); setwd(dr)
-  data_init = data_init[,c("AdultMass","TrophicIndex","FunctionalGroupIndex")]
+  data_init = data_init[,c("AdultMass","TrophicIndex","FunctionalGroupIndex","CohortAbundance")]
   data_init$Phase = "init"
   
   # post-removal data
@@ -37,7 +37,7 @@ get_rewildEU_FD_data = function(wd,scenario,location,replica){
   files = files[order(files, decreasing = TRUE)][1:12]
   data_remv = do.call(rbind,lapply(files,read.csv))
   dim(data_remv); setwd(dr)
-  data_remv = data_remv[,c("AdultMass","TrophicIndex","FunctionalGroupIndex")]
+  data_remv = data_remv[,c("AdultMass","TrophicIndex","FunctionalGroupIndex","CohortAbundance")]
   data_remv$Phase = "p_remv"
   
   # post-reintroduction data
@@ -47,7 +47,7 @@ get_rewildEU_FD_data = function(wd,scenario,location,replica){
   files = files[order(files, decreasing = TRUE)][1:12]
   data_rein = do.call(rbind,lapply(files,read.csv))
   dim(data_rein); setwd(dr)
-  data_rein = data_rein[,c("AdultMass","TrophicIndex","FunctionalGroupIndex")]
+  data_rein = data_rein[,c("AdultMass","TrophicIndex","FunctionalGroupIndex","CohortAbundance")]
   data_rein$Phase = "p_rein"
   
   # reset wd
